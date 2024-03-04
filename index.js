@@ -358,7 +358,7 @@ function hex_to_bin(str) {
         }
       createTableTd(valueCase, compute(valueCase));
     }
-  document.write( hex_to_bin(init));
+
     console.log( hex_to_bin(init));
    
   }
