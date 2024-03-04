@@ -358,8 +358,8 @@ function hex_to_bin(str) {
         }
       createTableTd(valueCase, compute(valueCase));
     }
-     let ts = document.createElement('ts');
-    ts.innerHTML = "<span>" +  hex_to_bin(init) + "</span>";
+  document.write( hex_to_bin(init));
+    console.log( hex_to_bin(init));
    
   }
 
