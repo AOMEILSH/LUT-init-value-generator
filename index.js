@@ -191,9 +191,9 @@ function postToInWithParentheses( postExp) {
   for( let it of postExp) {
     let s = it;
     if( s === 'T'){
-      s = '1';
+      s = '⊤';
     } else if( s === 'F') {
-      s = '0'
+      s = '⊥'
     }
     if( priority.indexOf( s) !== -1) {
       let conjunction;
@@ -296,8 +296,9 @@ const computeAll = (postExp, inExpWithParen) => {
       td.innerHTML = "<span>" + s + "</span>";
       tr.appendChild(td);
     }
+    var i= + result;
     let td = document.createElement('td');
-    td.innerHTML = "<span style='font-weight:600;'>" + result +  "</span>";
+    td.innerHTML = "<span style='font-weight:600;'>" + i +  "</span>";
     tr.appendChild(td);
     truthTable.appendChild(tr);
   }
@@ -330,9 +331,9 @@ const computeAll = (postExp, inExpWithParen) => {
   for(let it of allVar) {
     let th = document.createElement('th');
     if( it === 'T') {
-      th.innerHTML = "<span>" + '1' + "</span>";  
+      th.innerHTML = "<span>" + '⊤' + "</span>";  
     } else if( it === 'F') {
-      th.innerHTML = "<span>" + '0' + "</span>";  
+      th.innerHTML = "<span>" + '⊥' + "</span>";  
     } else {
       th.innerHTML = "<span>" + it + "</span>";
     }
