@@ -337,7 +337,7 @@ function hex_to_bin(str) {
    */
   function listAll(allVar) {
     const maxLength = ( 2 ** allVar.length - 1).toString(2).length;
-    var init;
+    var init="";
     for(let i = 0; allVar.length && i < 2 ** allVar.length; i++) {
       let bin = '';
       for( let j = i.toString(2).length; j < maxLength; j++) {
@@ -383,7 +383,7 @@ function hex_to_bin(str) {
   tr.appendChild(th);
   truthTable.appendChild(tr);
   listAll(allVar,trueOrFalse)
-}
+
 
 // const Line = "(a \\/ b) /\\ c -> (d <-> e)";
 // const Line = "( test /\\ aaadw /\\ (_fds<->a /\\ T \\/ fn) ^ dcx \\/ vd) /\\ ~ s1sand <->(notaf<->~~fforad)->F/\\(~not -> xwtqs^a)->we/\\b\\/(adcc/\\b)";
