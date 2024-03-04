@@ -359,7 +359,7 @@ function hex_to_bin(str) {
       createTableTd(valueCase, compute(valueCase));
     }
 
-    console.log( hex_to_bin(init));
+    console.log( parseInt(init,16));
    
   }
 
