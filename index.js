@@ -383,7 +383,7 @@ function hex_to_bin(str) {
   tr.appendChild(th);
   truthTable.appendChild(tr);
   listAll(allVar,trueOrFalse)
-
+}
 
 // const Line = "(a \\/ b) /\\ c -> (d <-> e)";
 // const Line = "( test /\\ aaadw /\\ (_fds<->a /\\ T \\/ fn) ^ dcx \\/ vd) /\\ ~ s1sand <->(notaf<->~~fforad)->F/\\(~not -> xwtqs^a)->we/\\b\\/(adcc/\\b)";
