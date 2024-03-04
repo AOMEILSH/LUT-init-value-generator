@@ -312,17 +312,17 @@ function hex_to_bin(str) {
     {key:'c',val:"1100"},{key:'d',val:"1101"},{key:'e',val:"1110"},{key:'f',val:"1111"}
     ]
 
-    let value=""
+    let value="";
     for(let i=0;i<str.length;i++){
         for(let j=0;j<hex_array.length;j++){
             if(str.charAt(i).toLowerCase()== hex_array[j].key){
-                value = value.concat(hex_array[j].val)
-                break
+                value = value.concat(hex_array[j].val);
+                break;
             }
         }
     }
-    console.log(value)
-    return value
+    console.log(value);
+    return value;
 }
 
 
