@@ -191,9 +191,9 @@ function postToInWithParentheses( postExp) {
   for( let it of postExp) {
     let s = it;
     if( s === 'T'){
-      s = '⊤';
+      s = '1';
     } else if( s === 'F') {
-      s = '⊥'
+      s = '0'
     }
     if( priority.indexOf( s) !== -1) {
       let conjunction;
@@ -330,9 +330,9 @@ const computeAll = (postExp, inExpWithParen) => {
   for(let it of allVar) {
     let th = document.createElement('th');
     if( it === 'T') {
-      th.innerHTML = "<span>" + '⊤' + "</span>";  
+      th.innerHTML = "<span>" + '1' + "</span>";  
     } else if( it === 'F') {
-      th.innerHTML = "<span>" + '⊥' + "</span>";  
+      th.innerHTML = "<span>" + '0' + "</span>";  
     } else {
       th.innerHTML = "<span>" + it + "</span>";
     }
