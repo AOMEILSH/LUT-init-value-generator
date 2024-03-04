@@ -358,8 +358,8 @@ function hex_to_bin(str) {
         }
       createTableTd(valueCase, compute(valueCase));
     }
-
-    console.log( parseInt(init,16));
+    let a = "0b"+init;
+   console.log(a.tostring(16));
    
   }
 
